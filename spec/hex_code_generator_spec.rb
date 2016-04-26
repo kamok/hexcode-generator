@@ -19,7 +19,7 @@ describe HexGenerator do
 
   it 'outputs valid hex values' do
     valid_hex_values = HexGenerator::VALID_HEX_VALUES
-    hex_without_pound = hex[1..-1].split("") 
+    hex_without_pound = hex[1..-1].split("")
     hex_without_pound.each { |char| expect(valid_hex_values).to include char }
   end
 
