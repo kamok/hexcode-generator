@@ -1,5 +1,5 @@
 # HexCodeGenerator
-https://travis-ci.org/mokk083/hexcode-generator.svg?branch=master
+[![Build Status](https://travis-ci.org/mokk083/hexcode-generator.svg?branch=master)](https://travis-ci.org/mokk083/hexcode-generator)
 This gem gives you random HEX codes. 1/16,777,216, repeatable, in #RRGGBB notation.
 
 ## Installation
