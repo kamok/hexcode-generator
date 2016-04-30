@@ -11,7 +11,7 @@ end
 
 describe HexGenerator do
 
-  let(:hex){ hex = HexGenerator.new_hex }
+  let(:hex) { HexGenerator.new_hex }
 
   it 'has a pound sign plus six characters' do
     expect(hex).to start_with "#"
