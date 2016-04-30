@@ -11,8 +11,8 @@ end
 
 describe HexGenerator do
 
-  let(:hex) { HexGenerator.new_hex }
-  let(:valid_hex_values) { HexGenerator::VALID_HEX_VALUES }
+  let(:hex) { described_class.new_hex }
+  let(:valid_hex_values) { described_class::VALID_HEX_VALUES }
 
   it 'has begins with a pound sign' do
     expect(hex).to start_with "#"
