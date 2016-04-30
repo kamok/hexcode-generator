@@ -14,9 +14,14 @@ describe HexGenerator do
   let(:hex) { HexGenerator.new_hex }
   let(:valid_hex_values) { HexGenerator::VALID_HEX_VALUES }
 
-  it 'has a pound sign plus six characters' do
+  it 'has begins with a pound sign' do
     expect(hex).to start_with "#"
-    expect(hex.length).to eq 7
+  end
+
+  it 'has 6 additional characters' do
+    hex.delete!("#")
+
+    expect(hex.length).to eq 6
   end
 
   it 'outputs valid hex values' do
